@@ -1,0 +1,29 @@
+================975a72908c3fa454887647223bbc2964================
+sqlite> select * from android_env;
+Surface Pro 9|Windows 11|5.10 x64|en|en-US|__FIREBASE_FAILED__|28800|3
+sqlite> select * from sessions;
+1|149.154.175.54|443|bp\C|
+sqlite> select * from version;
+7
+sqlite> select * from entities;
+7944787777|6607715699696421787||12065061850|Amber Herbert|1736318247
+sqlite> select * from session_info;
+Surface Pro 9|5.10 x64|Windows 11|2025-01-08 05:42:55
+sqlite> select * from update_state;
+0|0|0|1|0
+
+===============ccacc608e5400903b8075dc71171a8d3==================
+ccacc608e5400903b8075dc71171a8d3  12065061850.session
+sqlite> select * from android_env;
+Surface Pro 9|Windows 11|5.10 x64|en|en-US|__FIREBASE_FAILED__|28800|3
+sqlite> select * from sessions;
+1|149.154.175.54|443|bp\C|
+sqlite> select * from version;
+7
+sqlite> select * from entities;
+0|7944787777||||1736843026
+7944787777|6607715699696421787||||1736843026
+sqlite> select * from session_info;
+Surface Pro 9|5.10 x64|Windows 11|2025-01-08 05:42:55
+sqlite> select * from update_state;
+0|0|0|1|0

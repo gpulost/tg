@@ -1,0 +1,8 @@
+2025-01-14 02:32:36.378 | INFO     | __main__:check_phone_numbers:158 - Checking 1 / 20000: 66910020000
+2025-01-14 02:32:37.507 | INFO     | __main__:check_phone_numbers:170 - ImportedContacts(imported=[], popular_invites=[PopularContact(client_id=0, importers=10)], retry_contacts=[], users=[])
+2025-01-14 02:33:06.509 | INFO     | __main__:check_phone_numbers:180 - waiting for 29 seconds
+2025-01-14 02:33:06.509 | INFO     | __main__:check_phone_numbers:158 - Checking 2 / 20000: 66910020001
+2025-01-14 02:33:07.134 | INFO     | __main__:check_phone_numbers:170 - ImportedContacts(imported=[], popular_invites=[PopularContact(client_id=0, importers=3)], retry_contacts=[], users=[])
+2025-01-14 02:33:30.134 | INFO     | __main__:check_phone_numbers:180 - waiting for 23 seconds
+2025-01-14 02:33:30.135 | INFO     | __main__:check_phone_numbers:158 - Checking 3 / 20000: 66910020002
+2025-01-14 02:33:30.750 | INFO     | __main__:check_phone_numbers:170 - ImportedContacts(imported=[], popular_invites=[PopularContact(client_id=0, importers=4)], retry_contacts=[], users=[])

@@ -1,0 +1,7 @@
+2025-01-14 05:32:44.467 | INFO     | __main__:check_phone_numbers:171 - Checking 1 / 371: 66910020000
+2025-01-14 05:32:44.837 | INFO     | __main__:check_phone_numbers:183 - ImportedContacts(imported=[], popular_invites=[PopularContact(client_id=0, importers=11)], retry_contacts=[], users=[])
+2025-01-14 05:32:44.837 | INFO     | __main__:check_phone_numbers:191 - 号码 66910020000 未注册 Telegram。
+2025-01-14 05:32:56.839 | INFO     | __main__:check_phone_numbers:196 - waiting for 12 seconds
+2025-01-14 05:32:56.839 | INFO     | __main__:check_phone_numbers:171 - Checking 2 / 371: 66910020001
+2025-01-14 05:32:57.214 | INFO     | __main__:check_phone_numbers:183 - ImportedContacts(imported=[], popular_invites=[PopularContact(client_id=0, importers=4)], retry_contacts=[], users=[])
+2025-01-14 05:32:57.214 | INFO     | __main__:check_phone_numbers:191 - 号码 66910020001 未注册 Telegram。
