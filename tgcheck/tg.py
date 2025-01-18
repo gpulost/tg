@@ -8,7 +8,10 @@ from telethon.tl.types import InputPhoneContact
 from dotenv import load_dotenv, find_dotenv
 import random
 from loguru import logger
-from readpdf import PDFReader
+import time
+import logging
+
+logging.basicConfig(level=logging.DEBUG)
 
 stumps = ["+15413006705", "+447743695156", "919038216291","918348412132","919903308121","916290476009","918420747293","919830325666","919830648745","919330543746","919836763322","919830814171","919123863542","919123530455","918348000919","917003797559","919123517291","918420373088","919831559633","919874472267","919163253738","919875080029","919088033199","917003079668","916290567101","918777232576","919051428079"]
 
@@ -18,7 +21,7 @@ pdf_reader = None # PDFReader()
 
 # 配置logger同时显示到console和文件
 logger.remove()
-logger.add("logs/56936632770_{time}.log", rotation="1 day", retention="7 days", level="DEBUG")
+logger.add("logs/0118_{time}.log", rotation="1 day", retention="7 days", level="DEBUG")
 logger.add(sys.stdout, level="DEBUG")
 
 # 加载环境变量
@@ -40,6 +43,30 @@ proxy_CL = {
     'password': '0GD3GjHj9tlLO'
 }
 
+proxy_PH = {
+    'proxy_type': 'http',
+    'addr': 'zproxy-as.lum-superproxy.com',
+    'port': 32223,
+    'username': 'lum-customer-c_7dcc6b25-zone-10018772-dns-remote-country-PH-session-89766322',
+    'password': '0GD3GjHj9tlLO'
+}
+proxy_MY = {
+    'proxy_type': 'http',
+    'addr': 'zproxy-as.lum-superproxy.com',
+    'port': 32223,
+    'username': 'lum-customer-c_7dcc6b25-zone-10018772-dns-remote-country-MY-session-10157856',
+    'password': '0GD3GjHj9tlLO'
+}
+
+proxy = {
+    'proxy_type': 'http',
+    'addr': 'zproxy.lum-superproxy.com',
+    'port': 32223,
+    'username': 'lum-customer-c_7dcc6b25-zone-10018772-dns-remote-country-US-session-59763399',
+    'password': '0GD3GjHj9tlLO'
+}
+
+
 def get_session_string(app_id, app_hash, session_file):
     """
     从SQLite session文件获取StringSession
@@ -53,7 +80,7 @@ def get_session_string(app_id, app_hash, session_file):
         str: session字符串, 失败返回None
     """
     # 使用 SQLite 文件中的 session 初始化客户端
-    client = TelegramClient(session_file, app_id, app_hash, proxy=proxy_CL)
+    client = TelegramClient(session_file, app_id, app_hash, proxy=proxy)
 
     try:
         # 连接并确认会话可用
@@ -71,60 +98,6 @@ def get_session_string(app_id, app_hash, session_file):
     except Exception as e:
         print(f"获取session失败: {str(e)}")
         return None
-
-    finally:
-        client.disconnect()
-
-
-def check_phone_number(app_id, app_hash, session_string, phone_number):
-    """
-    检测电话号码是否注册 Telegram
-
-    Args:
-        app_id: Telegram API ID
-        app_hash: Telegram API Hash
-        session_string: StringSession 字符串
-        phone_number: 待检测的电话号码 (格式: +1234567890)
-
-    Returns:
-        bool: True 表示已注册 Telegram, False 表示未注册或失败
-    """
-    # 使用 StringSession 初始化客户端
-    client = TelegramClient(StringSession(session_string), app_id, app_hash)
-
-    try:
-        # 连接客户端
-        client.connect()
-        if not client.is_user_authorized():
-            print("用户未授权，请检查 StringSession 有效性。")
-            return False
-
-
-        # 创建 InputPhoneContact 对象
-        contact = InputPhoneContact(
-            client_id=0,  # 可以是任意整数
-            phone=phone_number,
-            first_name="Test",
-            last_name=""
-        )
-
-        # 添加电话号码为联系人
-        result = client(ImportContactsRequest([contact]))
-        print(result)
-
-        if result.users:
-            print(f"号码 {phone_number} 是有效的 Telegram 用户。")
-            # 删除联系人（清理临时联系人）
-            if result.users:
-                client(DeleteContactsRequest(result.users))
-            return True
-        else:
-            print(f"号码 {phone_number} 未注册 Telegram。")
-            return False
-
-    except Exception as e:
-        print(f"检测失败: {str(e)}")
-        return False
 
     finally:
         client.disconnect()
@@ -171,14 +144,22 @@ def check_core(client: TelegramClient, phone_number):
         last_name=generate_random_person_last_name()
     )
 
+    silent = random.randint(5, 13)
+    logger.info(f"waiting for {silent} seconds before import contacts")
+    time.sleep(silent)
+
     # 添加电话号码为联系人
     result = client(ImportContactsRequest([contact]))
     logger.info(result)
+
 
     if result.users:
         logger.info(f"号码 {phone_number} 是有效的 Telegram 用户。")
     # 删除联系人（清理临时联系人）
         if result.users:
+            silent = random.randint(5, 13)
+            logger.info(f"waiting for {silent} seconds before delete contacts")
+            time.sleep(silent)
             client(DeleteContactsRequest(result.users))
     else:
         if phone_number in stumps:
@@ -202,7 +183,7 @@ def check_phone_numbers(app_id, app_hash, session_string, phone_numbers):
         bool: True 表示已注册 Telegram, False 表示未注册或失败
     """
     # 使用 StringSession 初始化客户端
-    client = TelegramClient(StringSession(session_string), app_id, app_hash, proxy=proxy_CL)
+    client = TelegramClient(StringSession(session_string), app_id, app_hash, proxy=proxy)
 
     try:
         # # 连接客户端
@@ -224,9 +205,9 @@ def check_phone_numbers(app_id, app_hash, session_string, phone_numbers):
             check_core(client, phone_number)
 
             # 随机静默
-            silent = random.randint(30, 180)
-            import time; time.sleep(silent)
-            logger.info(f"waiting for {silent} seconds")
+            # silent = random.randint(3, 10)
+            # import time; time.sleep(silent)
+            # logger.info(f"waiting for {silent} seconds")
 
             # 有效性检查
             if index % 10 == 0:
@@ -239,13 +220,13 @@ def check_phone_numbers(app_id, app_hash, session_string, phone_numbers):
 # 主函数
 if __name__ == "__main__":
     # 从环境变量中读取 API 配置
-    with open("56936632770.json", 'r') as f:
+    with open("0118/573233768385.json", 'r') as f:
         data = json.load(f)
     country_code = data['phone'][:2]
     phone_number = data['phone']
     app_id = str(data['app_id'])
     app_hash = data['app_hash']
-    session_file = data['session_file']
+    session_file = f"0118/{data['session_file']}"
     session = get_session_string(app_id, app_hash, session_file)
     print(phone_number, app_id, app_hash, session)
 
@@ -264,8 +245,8 @@ if __name__ == "__main__":
     #     print(f"号码 {phone_to_check} 未注册 Telegram。")
     with open("ctusmr6p2jvlleut3oc0.txt", "r") as f:
        phone_numbers = [line.strip() for line in f.readlines()]
-    check_phone_numbers(app_id, app_hash, session, phone_numbers[:1000])
-    # check_phone_numbers(app_id, app_hash, session, ["918910746436"])
+    check_phone_numbers(app_id, app_hash, session, phone_numbers[3000:5000])
+    # check_phone_numbers(app_id, app_hash, session, ["919903308121"])
     #check_phone_numbers(app_id, app_hash, session, ["+15413006705"])
     #check_phone_numbers(app_id, app_hash, session, ["918777829817"])
     # check_phone_numbers(app_id, app_hash, session, ["916290677194"])

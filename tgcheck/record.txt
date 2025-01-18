@@ -1,2 +1,44 @@
 ## 56936632770
+号是自己养的，比较稳定
 API_ID=594321 API_HASH=af40033fe90918e3c7b8a60261d1294a python3 sessionextract.py "56936632770"
+跑了3个小时，sleep(30, 180)
+最终跑了 100次，跑出来有效手机号
+账号目前在移动端养着，账号目前正常，只是当前功能不正常了
+
+
+大概在 
+start: 2025-01-17 03:39:55.322(UTC)
+end:   2025-01-17 06:24:30.595(UTC) 失效的
+
+貌似policy简化为:   一天100个 ？
+
+下次测试时间可以为 01-18 00:00:00(UTC)， 01-18 08:00:00(UTC+8)
+
+## +56936763994
+号是自己养的，比较稳定，暂时没用上
+
+## +525614341035
+用了一次，死掉；
+- 可能和挂了个之前死过号的代理有关系？？
+
+## +525621873147
+
+2025-01-18 10:36:09.212 | INFO     | __main__:check_phone_numbers:238 - Checking 2 / 2000: 919163495380
+2025-01-18 10:36:09.811 | INFO     | __main__:check_core:193 - ImportedContacts(imported=[], popular_invites=[PopularContact(client_id=0, importers=76)], retry_contacts=[], users=[])
+2025-01-18 10:36:22.812 | INFO     | __main__:check_core:197 - waiting for 13 seconds
+2025-01-18 10:36:22.812 | ERROR    | __main__:check_core:208 - 号码 919163495380 未注册 Telegram。
+2025-01-18 10:36:22.812 | INFO     | __main__:check_phone_numbers:238 - Checking 3 / 2000: 918617542874
+2025-01-18 10:36:23.196 | INFO     | __main__:check_core:193 - ImportedContacts(imported=[], popular_invites=[PopularContact(client_id=0, importers=106)], retry_contacts=[], users=[])
+2025-01-18 10:36:32.200 | INFO     | __main__:check_core:197 - waiting for 9 seconds
+2025-01-18 10:36:32.200 | ERROR    | __main__:check_core:208 - 号码 918617542874 未注册 Telegram。
+2025-01-18 10:36:32.201 | INFO     | __main__:check_phone_numbers:238 - Checking 4 / 2000: 919903642312
+2025-01-18 10:36:32.466 | ERROR    | __main__:check_phone_numbers:255 - 检测失败: The user has been deleted/deactivated (caused by ImportContactsRequest)
+
+## 525632590904 
+直接死
+
+## 525636557135
+用voice 检测9个死了
+
+## 525638162942
+用voice 死的很快
