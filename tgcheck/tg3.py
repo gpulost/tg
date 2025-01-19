@@ -27,45 +27,34 @@ logger.add(sys.stdout, level="DEBUG")
 # 加载环境变量
 _ = load_dotenv(find_dotenv())
 
-proxy = {
-    'proxy_type': 'http',
-    'addr': 'zproxy.lum-superproxy.com',
-    'port': 32223,
-    'username': 'lum-customer-c_7dcc6b25-zone-10018772-dns-remote-country-US-session-18963979',
-    'password': '0GD3GjHj9tlLO'
-}
+def parse_proxy_string(proxy_str):
+    """
+    Parse proxy string in format username:password@addr:port into proxy dict
+    """
+    # Split address and credentials
+    creds_addr = proxy_str.split('@')
+    if len(creds_addr) != 2:
+        raise ValueError("Invalid proxy string format")
+    
+    # Split username:password and addr:port
+    username_pass = creds_addr[0].split(':')
+    addr_port = creds_addr[1].split(':')
+    
+    if len(username_pass) != 2 or len(addr_port) != 2:
+        raise ValueError("Invalid proxy string format")
+        
+    return {
+        'proxy_type': 'http',
+        'addr': addr_port[0],
+        'port': int(addr_port[1]),
+        'username': username_pass[0],
+        'password': username_pass[1]
+    }
 
-proxy_CL = {
-    'proxy_type': 'http',
-    'addr': 'zproxy.lum-superproxy.com',
-    'port': 32223,
-    'username': 'lum-customer-c_7dcc6b25-zone-10018772-dns-remote-country-CL-session-24574397',
-    'password': '0GD3GjHj9tlLO'
-}
-
-proxy_PH = {
-    'proxy_type': 'http',
-    'addr': 'zproxy-as.lum-superproxy.com',
-    'port': 32223,
-    'username': 'lum-customer-c_7dcc6b25-zone-10018772-dns-remote-country-PH-session-89766322',
-    'password': '0GD3GjHj9tlLO'
-}
-proxy_MY = {
-    'proxy_type': 'http',
-    'addr': 'zproxy-as.lum-superproxy.com',
-    'port': 32223,
-    'username': 'lum-customer-c_7dcc6b25-zone-10018772-dns-remote-country-MY-session-10157856',
-    'password': '0GD3GjHj9tlLO'
-}
-
-proxy = {
-    'proxy_type': 'http',
-    'addr': 'zproxy.lum-superproxy.com',
-    'port': 32223,
-    'username': 'lum-customer-c_7dcc6b25-zone-10018772-dns-remote-country-US-session-59763399',
-    'password': '0GD3GjHj9tlLO'
-}
-
+with open("proxies_(random)_10000.txt", "r") as f:
+    proxies = [parse_proxy_string(line.strip()) for line in f.readlines()]
+proxy = random.choice(proxies)
+logger.info(f"using proxy: {proxy}")
 
 def get_session_string(app_id, app_hash, session_file):
     """
@@ -138,7 +127,7 @@ def generate_random_person_last_name():
 
 def check_core(client: TelegramClient, phone_number):
     contact = InputPhoneContact(
-        client_id=0,  # 可以是任意整数
+        client_id=random.randint(10000000, 99999999),  # 可以是任意整数
         phone=phone_number,
         first_name=generate_random_person_first_name(),
         last_name=generate_random_person_last_name()
@@ -234,20 +223,7 @@ if __name__ == "__main__":
         print("请设置 SESSION、TELEGRAM_API_ID 和 TELEGRAM_API_HASH 环境变量")
         sys.exit(1)
 
-    # phone_to_check = "+8615710086955"  # 替换为实际需要检测的号码
-    # phone_to_check = "+15413006705"
-    # 检测电话号码是否注册 Telegram
-    # is_registered = check_phone_number(app_id, app_hash, session, phone_to_check)
-
-    # if is_registered:
-    #     print(f"号码 {phone_to_check} 已注册 Telegram。")
-    # else:
-    #     print(f"号码 {phone_to_check} 未注册 Telegram。")
     with open("ctusmr6p2jvlleut3oc0.txt", "r") as f:
        phone_numbers = [line.strip() for line in f.readlines()]
     check_phone_numbers(app_id, app_hash, session, phone_numbers[3000+24+23:5000])
-    # check_phone_numbers(app_id, app_hash, session, ["919903308121"])
-    #check_phone_numbers(app_id, app_hash, session, ["+15413006705"])
-    #check_phone_numbers(app_id, app_hash, session, ["918777829817"])
-    # check_phone_numbers(app_id, app_hash, session, ["916290677194"])
 

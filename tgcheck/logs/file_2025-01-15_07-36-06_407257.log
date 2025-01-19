@@ -1,4 +1,0 @@
-2025-01-15 07:36:12.294 | INFO     | __main__:check_phone_numbers:206 - Checking 1 / 1: 918017186926
-2025-01-15 07:36:12.884 | INFO     | __main__:check_core:166 - ImportedContacts(imported=[], popular_invites=[], retry_contacts=[0], users=[])
-2025-01-15 07:36:12.884 | ERROR    | __main__:check_core:178 - 号码 918017186926 未注册 Telegram。
-2025-01-15 07:36:32.885 | INFO     | __main__:check_phone_numbers:214 - waiting for 20 seconds

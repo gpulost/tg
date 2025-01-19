@@ -1,0 +1,82 @@
+2025-01-18 11:24:13.017 | INFO     | __main__:check_phone_numbers:199 - Checking 1 / 1953: 919836297994
+2025-01-18 11:24:13.017 | INFO     | __main__:check_core:148 - waiting for 8 seconds before import contacts
+2025-01-18 11:24:21.415 | INFO     | __main__:check_core:153 - ImportedContacts(imported=[ImportedContact(user_id=6234656720, client_id=0)], popular_invites=[], retry_contacts=[], users=[User(id=6234656720, is_self=False, contact=True, mutual_contact=False, deleted=False, bot=False, bot_chat_history=False, bot_nochats=False, verified=False, restricted=False, min=False, bot_inline_geo=False, support=False, scam=False, apply_min_photo=True, fake=False, bot_attach_menu=False, premium=False, attach_menu_enabled=False, bot_can_edit=False, close_friend=False, stories_hidden=False, stories_unavailable=True, contact_require_premium=False, bot_business=False, bot_has_main_app=False, access_hash=5873583501122516258, first_name='Charlie', last_name='Williams', username=None, phone='919836297994', photo=None, status=UserStatusOffline(was_online=datetime.datetime(2024, 7, 15, 10, 58, 33, tzinfo=datetime.timezone.utc)), bot_info_version=None, restriction_reason=[], bot_inline_placeholder=None, lang_code=None, emoji_status=None, usernames=[], stories_max_id=None, color=None, profile_color=None, bot_active_users=None)])
+2025-01-18 11:24:21.417 | INFO     | __main__:check_core:157 - 号码 919836297994 是有效的 Telegram 用户。
+2025-01-18 11:24:21.417 | INFO     | __main__:check_core:161 - waiting for 5 seconds before delete contacts
+2025-01-18 11:24:26.810 | INFO     | __main__:check_core:148 - waiting for 13 seconds before import contacts
+2025-01-18 11:24:40.214 | INFO     | __main__:check_core:153 - ImportedContacts(imported=[ImportedContact(user_id=6057689849, client_id=0)], popular_invites=[], retry_contacts=[], users=[User(id=6057689849, is_self=False, contact=True, mutual_contact=False, deleted=False, bot=False, bot_chat_history=False, bot_nochats=False, verified=False, restricted=False, min=False, bot_inline_geo=False, support=False, scam=False, apply_min_photo=True, fake=False, bot_attach_menu=False, premium=False, attach_menu_enabled=False, bot_can_edit=False, close_friend=False, stories_hidden=False, stories_unavailable=True, contact_require_premium=False, bot_business=False, bot_has_main_app=False, access_hash=1904211722864752861, first_name='Bob', last_name='Rodriguez', username=None, phone='918420747293', photo=None, status=UserStatusOffline(was_online=datetime.datetime(2024, 4, 2, 13, 42, 46, tzinfo=datetime.timezone.utc)), bot_info_version=None, restriction_reason=[], bot_inline_placeholder=None, lang_code=None, emoji_status=None, usernames=[], stories_max_id=None, color=None, profile_color=None, bot_active_users=None)])
+2025-01-18 11:24:40.214 | INFO     | __main__:check_core:157 - 号码 918420747293 是有效的 Telegram 用户。
+2025-01-18 11:24:40.214 | INFO     | __main__:check_core:161 - waiting for 5 seconds before delete contacts
+2025-01-18 11:24:45.601 | INFO     | __main__:check_phone_numbers:199 - Checking 2 / 1953: 919836631281
+2025-01-18 11:24:45.602 | INFO     | __main__:check_core:148 - waiting for 8 seconds before import contacts
+2025-01-18 11:24:53.998 | INFO     | __main__:check_core:153 - ImportedContacts(imported=[ImportedContact(user_id=7523330086, client_id=0)], popular_invites=[], retry_contacts=[], users=[User(id=7523330086, is_self=False, contact=True, mutual_contact=False, deleted=False, bot=False, bot_chat_history=False, bot_nochats=False, verified=False, restricted=False, min=False, bot_inline_geo=False, support=False, scam=False, apply_min_photo=True, fake=False, bot_attach_menu=False, premium=False, attach_menu_enabled=False, bot_can_edit=False, close_friend=False, stories_hidden=False, stories_unavailable=True, contact_require_premium=False, bot_business=False, bot_has_main_app=False, access_hash=8634640698708012232, first_name='Charlie', last_name='Johnson', username=None, phone='919836631281', photo=None, status=UserStatusOffline(was_online=datetime.datetime(2024, 8, 29, 9, 2, 5, tzinfo=datetime.timezone.utc)), bot_info_version=None, restriction_reason=[], bot_inline_placeholder=None, lang_code=None, emoji_status=None, usernames=[], stories_max_id=None, color=None, profile_color=None, bot_active_users=None)])
+2025-01-18 11:24:53.998 | INFO     | __main__:check_core:157 - 号码 919836631281 是有效的 Telegram 用户。
+2025-01-18 11:24:54.001 | INFO     | __main__:check_core:161 - waiting for 9 seconds before delete contacts
+2025-01-18 11:25:03.392 | INFO     | __main__:check_phone_numbers:199 - Checking 3 / 1953: 919051075934
+2025-01-18 11:25:03.392 | INFO     | __main__:check_core:148 - waiting for 6 seconds before import contacts
+2025-01-18 11:25:09.884 | INFO     | __main__:check_core:153 - ImportedContacts(imported=[], popular_invites=[PopularContact(client_id=0, importers=13)], retry_contacts=[], users=[])
+2025-01-18 11:25:09.885 | ERROR    | __main__:check_core:169 - 号码 919051075934 未注册 Telegram。
+2025-01-18 11:25:09.885 | INFO     | __main__:check_phone_numbers:199 - Checking 4 / 1953: 917980881792
+2025-01-18 11:25:09.885 | INFO     | __main__:check_core:148 - waiting for 12 seconds before import contacts
+2025-01-18 11:25:22.378 | INFO     | __main__:check_core:153 - ImportedContacts(imported=[], popular_invites=[PopularContact(client_id=0, importers=36)], retry_contacts=[], users=[])
+2025-01-18 11:25:22.378 | ERROR    | __main__:check_core:169 - 号码 917980881792 未注册 Telegram。
+2025-01-18 11:25:22.378 | INFO     | __main__:check_phone_numbers:199 - Checking 5 / 1953: 918582925839
+2025-01-18 11:25:22.378 | INFO     | __main__:check_core:148 - waiting for 12 seconds before import contacts
+2025-01-18 11:25:34.881 | INFO     | __main__:check_core:153 - ImportedContacts(imported=[], popular_invites=[PopularContact(client_id=0, importers=2)], retry_contacts=[], users=[])
+2025-01-18 11:25:34.881 | ERROR    | __main__:check_core:169 - 号码 918582925839 未注册 Telegram。
+2025-01-18 11:25:34.881 | INFO     | __main__:check_phone_numbers:199 - Checking 6 / 1953: 918910976768
+2025-01-18 11:25:34.882 | INFO     | __main__:check_core:148 - waiting for 13 seconds before import contacts
+2025-01-18 11:25:48.376 | INFO     | __main__:check_core:153 - ImportedContacts(imported=[], popular_invites=[PopularContact(client_id=0, importers=144)], retry_contacts=[], users=[])
+2025-01-18 11:25:48.377 | ERROR    | __main__:check_core:169 - 号码 918910976768 未注册 Telegram。
+2025-01-18 11:25:48.377 | INFO     | __main__:check_phone_numbers:199 - Checking 7 / 1953: 919831010006
+2025-01-18 11:25:48.382 | INFO     | __main__:check_core:148 - waiting for 9 seconds before import contacts
+2025-01-18 11:25:57.882 | INFO     | __main__:check_core:153 - ImportedContacts(imported=[], popular_invites=[PopularContact(client_id=0, importers=516)], retry_contacts=[], users=[])
+2025-01-18 11:25:57.882 | ERROR    | __main__:check_core:169 - 号码 919831010006 未注册 Telegram。
+2025-01-18 11:25:57.882 | INFO     | __main__:check_phone_numbers:199 - Checking 8 / 1953: 919330874365
+2025-01-18 11:25:57.882 | INFO     | __main__:check_core:148 - waiting for 6 seconds before import contacts
+2025-01-18 11:26:04.389 | INFO     | __main__:check_core:153 - ImportedContacts(imported=[], popular_invites=[PopularContact(client_id=0, importers=44)], retry_contacts=[], users=[])
+2025-01-18 11:26:04.389 | ERROR    | __main__:check_core:169 - 号码 919330874365 未注册 Telegram。
+2025-01-18 11:26:04.392 | INFO     | __main__:check_phone_numbers:199 - Checking 9 / 1953: 918420133148
+2025-01-18 11:26:04.392 | INFO     | __main__:check_core:148 - waiting for 8 seconds before import contacts
+2025-01-18 11:26:12.974 | INFO     | __main__:check_core:153 - ImportedContacts(imported=[], popular_invites=[PopularContact(client_id=0, importers=61)], retry_contacts=[], users=[])
+2025-01-18 11:26:12.974 | ERROR    | __main__:check_core:169 - 号码 918420133148 未注册 Telegram。
+2025-01-18 11:26:12.977 | INFO     | __main__:check_phone_numbers:199 - Checking 10 / 1953: 918017299263
+2025-01-18 11:26:12.977 | INFO     | __main__:check_core:148 - waiting for 8 seconds before import contacts
+2025-01-18 11:26:21.483 | INFO     | __main__:check_core:153 - ImportedContacts(imported=[], popular_invites=[PopularContact(client_id=0, importers=908)], retry_contacts=[], users=[])
+2025-01-18 11:26:21.483 | ERROR    | __main__:check_core:169 - 号码 918017299263 未注册 Telegram。
+2025-01-18 11:26:21.483 | INFO     | __main__:check_phone_numbers:199 - Checking 11 / 1953: 919674389392
+2025-01-18 11:26:21.483 | INFO     | __main__:check_core:148 - waiting for 9 seconds before import contacts
+2025-01-18 11:26:31.003 | INFO     | __main__:check_core:153 - ImportedContacts(imported=[], popular_invites=[PopularContact(client_id=0, importers=331)], retry_contacts=[], users=[])
+2025-01-18 11:26:31.003 | ERROR    | __main__:check_core:169 - 号码 919674389392 未注册 Telegram。
+2025-01-18 11:26:31.003 | INFO     | __main__:check_core:148 - waiting for 10 seconds before import contacts
+2025-01-18 11:26:41.398 | INFO     | __main__:check_core:153 - ImportedContacts(imported=[ImportedContact(user_id=5796686197, client_id=0)], popular_invites=[], retry_contacts=[], users=[User(id=5796686197, is_self=False, contact=True, mutual_contact=False, deleted=False, bot=False, bot_chat_history=False, bot_nochats=False, verified=False, restricted=False, min=False, bot_inline_geo=False, support=False, scam=False, apply_min_photo=True, fake=False, bot_attach_menu=False, premium=False, attach_menu_enabled=False, bot_can_edit=False, close_friend=False, stories_hidden=False, stories_unavailable=True, contact_require_premium=False, bot_business=False, bot_has_main_app=False, access_hash=9159863560760525528, first_name='Alice', last_name='Brown', username=None, phone='917003079668', photo=UserProfilePhoto(photo_id=6264580740817729836, dc_id=5, has_video=False, personal=False, stripped_thumb=b'\x01\x08\x08\x88\xcc\xad*n\xce\xd00E\x14Q@\x1f'), status=UserStatusOffline(was_online=datetime.datetime(2025, 1, 17, 18, 57, 22, tzinfo=datetime.timezone.utc)), bot_info_version=None, restriction_reason=[], bot_inline_placeholder=None, lang_code=None, emoji_status=None, usernames=[], stories_max_id=None, color=None, profile_color=None, bot_active_users=None)])
+2025-01-18 11:26:41.398 | INFO     | __main__:check_core:157 - 号码 917003079668 是有效的 Telegram 用户。
+2025-01-18 11:26:41.399 | INFO     | __main__:check_core:161 - waiting for 5 seconds before delete contacts
+2025-01-18 11:26:46.786 | INFO     | __main__:check_phone_numbers:199 - Checking 12 / 1953: 919875640582
+2025-01-18 11:26:46.790 | INFO     | __main__:check_core:148 - waiting for 13 seconds before import contacts
+2025-01-18 11:27:00.295 | INFO     | __main__:check_core:153 - ImportedContacts(imported=[], popular_invites=[PopularContact(client_id=0, importers=33)], retry_contacts=[], users=[])
+2025-01-18 11:27:00.296 | ERROR    | __main__:check_core:169 - 号码 919875640582 未注册 Telegram。
+2025-01-18 11:27:00.296 | INFO     | __main__:check_phone_numbers:199 - Checking 13 / 1953: 919123397380
+2025-01-18 11:27:00.296 | INFO     | __main__:check_core:148 - waiting for 9 seconds before import contacts
+2025-01-18 11:27:09.727 | INFO     | __main__:check_core:153 - ImportedContacts(imported=[ImportedContact(user_id=6629445880, client_id=0)], popular_invites=[], retry_contacts=[], users=[User(id=6629445880, is_self=False, contact=True, mutual_contact=False, deleted=False, bot=False, bot_chat_history=False, bot_nochats=False, verified=False, restricted=False, min=False, bot_inline_geo=False, support=False, scam=False, apply_min_photo=True, fake=False, bot_attach_menu=False, premium=False, attach_menu_enabled=False, bot_can_edit=False, close_friend=False, stories_hidden=False, stories_unavailable=True, contact_require_premium=False, bot_business=False, bot_has_main_app=False, access_hash=5396894941882002593, first_name='Hank', last_name='Garcia', username=None, phone='919123397380', photo=None, status=UserStatusOffline(was_online=datetime.datetime(2023, 9, 9, 6, 4, 34, tzinfo=datetime.timezone.utc)), bot_info_version=None, restriction_reason=[], bot_inline_placeholder=None, lang_code=None, emoji_status=None, usernames=[], stories_max_id=None, color=None, profile_color=None, bot_active_users=None)])
+2025-01-18 11:27:09.727 | INFO     | __main__:check_core:157 - 号码 919123397380 是有效的 Telegram 用户。
+2025-01-18 11:27:09.727 | INFO     | __main__:check_core:161 - waiting for 13 seconds before delete contacts
+2025-01-18 11:27:23.239 | INFO     | __main__:check_phone_numbers:199 - Checking 14 / 1953: 919038723971
+2025-01-18 11:27:23.239 | INFO     | __main__:check_core:148 - waiting for 12 seconds before import contacts
+2025-01-18 11:27:35.732 | INFO     | __main__:check_core:153 - ImportedContacts(imported=[], popular_invites=[PopularContact(client_id=0, importers=9)], retry_contacts=[], users=[])
+2025-01-18 11:27:35.735 | ERROR    | __main__:check_core:169 - 号码 919038723971 未注册 Telegram。
+2025-01-18 11:27:35.735 | INFO     | __main__:check_phone_numbers:199 - Checking 15 / 1953: 918240711857
+2025-01-18 11:27:35.735 | INFO     | __main__:check_core:148 - waiting for 6 seconds before import contacts
+2025-01-18 11:27:42.235 | INFO     | __main__:check_core:153 - ImportedContacts(imported=[], popular_invites=[PopularContact(client_id=0, importers=250)], retry_contacts=[], users=[])
+2025-01-18 11:27:42.236 | ERROR    | __main__:check_core:169 - 号码 918240711857 未注册 Telegram。
+2025-01-18 11:27:42.238 | INFO     | __main__:check_phone_numbers:199 - Checking 16 / 1953: 919432156959
+2025-01-18 11:27:42.238 | INFO     | __main__:check_core:148 - waiting for 9 seconds before import contacts
+2025-01-18 11:27:51.761 | INFO     | __main__:check_core:153 - ImportedContacts(imported=[], popular_invites=[PopularContact(client_id=0, importers=2)], retry_contacts=[], users=[])
+2025-01-18 11:27:51.761 | ERROR    | __main__:check_core:169 - 号码 919432156959 未注册 Telegram。
+2025-01-18 11:27:51.761 | INFO     | __main__:check_phone_numbers:199 - Checking 17 / 1953: 919433610703
+2025-01-18 11:27:51.762 | INFO     | __main__:check_core:148 - waiting for 9 seconds before import contacts
+2025-01-18 11:28:01.272 | INFO     | __main__:check_core:153 - ImportedContacts(imported=[], popular_invites=[PopularContact(client_id=0, importers=49)], retry_contacts=[], users=[])
+2025-01-18 11:28:01.273 | ERROR    | __main__:check_core:169 - 号码 919433610703 未注册 Telegram。
+2025-01-18 11:28:01.273 | INFO     | __main__:check_phone_numbers:199 - Checking 18 / 1953: 919674001654
+2025-01-18 11:28:01.273 | INFO     | __main__:check_core:148 - waiting for 13 seconds before import contacts
+2025-01-18 11:28:14.659 | ERROR    | __main__:check_phone_numbers:216 - 检测失败: The authorization has been invalidated, because of the user terminating all sessions (caused by ImportContactsRequest)

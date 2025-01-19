@@ -1,0 +1,7 @@
+2025-01-18 13:08:06.020 | INFO     | __main__:<module>:58 - using proxy: {'proxy_type': 'http', 'addr': 'zproxy-as.lum-superproxy.com', 'port': 32223, 'username': 'lum-customer-c_7dcc6b25-zone-10018772-dns-remote-country-TR-session-42312248', 'password': '0GD3GjHj9tlLO'}
+2025-01-18 13:08:14.209 | INFO     | __main__:check_phone_numbers:190 - Checking 1 / 912: 919674473610
+2025-01-18 13:08:14.211 | INFO     | __main__:check_core:139 - waiting for 14.342803426971829 seconds before import contacts
+2025-01-18 13:08:29.181 | INFO     | __main__:check_core:144 - ImportedContacts(imported=[], popular_invites=[PopularContact(client_id=63528298, importers=63)], retry_contacts=[], users=[])
+2025-01-18 13:08:29.181 | ERROR    | __main__:check_core:160 - 号码 919674473610 未注册 Telegram。
+2025-01-18 13:08:29.181 | INFO     | __main__:check_phone_numbers:190 - Checking 2 / 912: 919330732491
+2025-01-18 13:08:29.182 | INFO     | __main__:check_core:139 - waiting for 18.61115681060285 seconds before import contacts

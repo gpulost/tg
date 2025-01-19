@@ -1,0 +1,1 @@
+2025-01-18 11:00:46.834 | INFO     | __main__:<module>:57 - using proxy: {'proxy_type': 'http', 'addr': 'zproxy-eu.lum-superproxy.com', 'port': 32223, 'username': 'lum-customer-c_7dcc6b25-zone-10018772-dns-remote-country-MD-session-12746285', 'password': '0GD3GjHj9tlLO'}

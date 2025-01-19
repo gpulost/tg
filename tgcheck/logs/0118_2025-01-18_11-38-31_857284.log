@@ -1,0 +1,8 @@
+2025-01-18 11:38:31.974 | INFO     | __main__:<module>:58 - using proxy: {'proxy_type': 'http', 'addr': 'zproxy-as.lum-superproxy.com', 'port': 32223, 'username': 'lum-customer-c_7dcc6b25-zone-10018772-dns-remote-country-TR-session-42312248', 'password': '0GD3GjHj9tlLO'}
+2025-01-18 11:38:37.857 | INFO     | __main__:check_phone_numbers:189 - Checking 1 / 934: 919748440722
+2025-01-18 11:38:37.858 | INFO     | __main__:check_core:138 - waiting for 9 seconds before import contacts
+2025-01-18 11:38:48.242 | INFO     | __main__:check_core:143 - ImportedContacts(imported=[], popular_invites=[], retry_contacts=[49483624], users=[])
+2025-01-18 11:38:48.242 | ERROR    | __main__:check_core:159 - 号码 919748440722 未注册 Telegram。
+2025-01-18 11:38:48.243 | INFO     | __main__:check_core:138 - waiting for 9 seconds before import contacts
+2025-01-18 11:38:58.550 | INFO     | __main__:check_core:143 - ImportedContacts(imported=[], popular_invites=[], retry_contacts=[14587434], users=[])
+2025-01-18 11:38:58.553 | INFO     | __main__:check_core:156 - stumps 917003079668 未注册 Telegram。

@@ -1,0 +1,2 @@
+2025-01-19 08:06:10.037 | INFO     | __main__:check_phone_numbers:218 - Checking 0->100 / 6919
+2025-01-19 08:06:10.038 | INFO     | __main__:check_core:145 - waiting for 127.32157030633518 seconds before import contacts

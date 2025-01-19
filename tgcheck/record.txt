@@ -22,7 +22,7 @@ end:   2025-01-17 06:24:30.595(UTC) 失效的
 - 可能和挂了个之前死过号的代理有关系？？
 
 ## +525621873147
-
+4个
 2025-01-18 10:36:09.212 | INFO     | __main__:check_phone_numbers:238 - Checking 2 / 2000: 919163495380
 2025-01-18 10:36:09.811 | INFO     | __main__:check_core:193 - ImportedContacts(imported=[], popular_invites=[PopularContact(client_id=0, importers=76)], retry_contacts=[], users=[])
 2025-01-18 10:36:22.812 | INFO     | __main__:check_core:197 - waiting for 13 seconds
@@ -42,3 +42,28 @@ end:   2025-01-17 06:24:30.595(UTC) 失效的
 
 ## 525638162942
 用voice 死的很快
+
+## 573235083381
+15个死掉，用了随机出来的IP
+
+## 573235103776
++ client_id random
++ 51个 退出了(代理不是很稳定)
++ 没死，重新试了几次，死了
+
+## 573245336501
++ 时间放长
++ 移除stumps
++ 名字/uniform
+
+2025-01-18 11:55:36.524 | ERROR    | __main__:check_phone_numbers:207 - 检测失败: The authorization has been invalidated, because of the user terminating all
+sessions (caused by ImportContactsRequest)
+
+## 573249060080
+- 一个报错，尝试忽略，可以一直检测
+- 结果错误，918337074129
+
+
+
+- IP用不对可能会导致很快死掉
+- 检测频率、其他信息不对可能导致死掉

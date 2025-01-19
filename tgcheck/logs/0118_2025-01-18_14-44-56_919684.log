@@ -1,0 +1,10 @@
+2025-01-18 14:44:59.759 | INFO     | __main__:check_phone_numbers:190 - Checking 1 / 762: 919874650626
+2025-01-18 14:44:59.760 | INFO     | __main__:check_core:139 - waiting for 10.012559912353886 seconds before import contacts
+2025-01-18 14:45:10.021 | INFO     | __main__:check_core:144 - ImportedContacts(imported=[], popular_invites=[], retry_contacts=[64118195], users=[])
+2025-01-18 14:45:10.022 | ERROR    | __main__:check_core:160 - 号码 919874650626 未注册 Telegram。
+2025-01-18 14:45:10.022 | INFO     | __main__:check_phone_numbers:190 - Checking 2 / 762: 918337806635
+2025-01-18 14:45:10.022 | INFO     | __main__:check_core:139 - waiting for 16.5445347608234 seconds before import contacts
+2025-01-18 14:45:26.817 | INFO     | __main__:check_core:144 - ImportedContacts(imported=[], popular_invites=[], retry_contacts=[74879202], users=[])
+2025-01-18 14:45:26.817 | ERROR    | __main__:check_core:160 - 号码 918337806635 未注册 Telegram。
+2025-01-18 14:45:26.818 | INFO     | __main__:check_phone_numbers:190 - Checking 3 / 762: 919874180166
+2025-01-18 14:45:26.818 | INFO     | __main__:check_core:139 - waiting for 15.080148718547116 seconds before import contacts

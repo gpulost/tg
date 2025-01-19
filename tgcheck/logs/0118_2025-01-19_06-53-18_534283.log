@@ -1,0 +1,118 @@
+2025-01-19 06:53:21.253 | INFO     | __main__:check_phone_numbers:217 - Checking 0->100 / 6919
+2025-01-19 06:53:21.254 | INFO     | __main__:check_core:145 - waiting for 32.934788838691944 seconds before import contacts
+2025-01-19 06:53:54.629 | INFO     | __main__:check_core:149 - ImportedContacts(imported=[ImportedContact(user_id=6358775300, client_id=86845766)], popular_invites=[], retry_contacts=[25672316, 33245324, 24315078, 40087286, 48645870, 81808259, 55025685, 56277815, 14827754, 91413389, 28072619, 53857381, 51342491, 78525884, 63235729, 27612976, 49137760, 56363478, 92463916, 28404904, 46692793, 36189312, 25595822, 79679214, 13834289, 28923130, 83813723, 19487397, 45750381, 87695655, 86700327, 29461243, 65427301, 89547246, 93897687, 60730913, 41080529, 23698585, 90604045, 10601389, 72657157, 68948129, 52097683, 35094596, 87874202, 13439548, 67717757, 96559583, 36793915, 22355434, 29107157, 24006611, 81178614, 66983191, 11792179, 48897393, 65834920, 48862417, 71429231, 16685089, 72525510, 91896416, 49436758, 38076876, 83377605, 16579068, 57214069, 58732017, 31702130, 96307470, 11179476, 70589270, 42043457, 86693205, 21786800, 55581368, 80582641, 49354140, 66191549, 46812488, 10284538, 82941490, 34892523, 29865828, 58450728, 37406573, 50783757, 34254513, 69191025, 54351315, 75053005, 85207842, 56024131, 30582562, 13586993, 79391913, 26428529, 22632956, 71342174], users=[User(id=6358775300, is_self=False, contact=True, mutual_contact=False, deleted=False, bot=False, bot_chat_history=False, bot_nochats=False, verified=False, restricted=False, min=False, bot_inline_geo=False, support=False, scam=False, apply_min_photo=True, fake=False, bot_attach_menu=False, premium=False, attach_menu_enabled=False, bot_can_edit=False, close_friend=False, stories_hidden=False, stories_unavailable=True, contact_require_premium=False, bot_business=False, bot_has_main_app=False, access_hash=-1670692791755301142, first_name='Mnbx', last_name='FrXS', username=None, phone='919073508087', photo=UserProfilePhoto(photo_id=6246705503543607679, dc_id=5, has_video=False, personal=False, stripped_thumb=b'\x01\x08\x08c\xa6\x02\xa8Fd\xcf9\xa2\x8a)\\v?'), status=UserStatusOffline(was_online=datetime.datetime(2024, 12, 14, 15, 31, 10, tzinfo=datetime.timezone.utc)), bot_info_version=None, restriction_reason=[], bot_inline_placeholder=None, lang_code=None, emoji_status=None, usernames=[], stories_max_id=None, color=None, profile_color=None, bot_active_users=None)])
+2025-01-19 06:53:54.630 | INFO     | __main__:check_core:152 - waiting for 15.960411828676172 seconds before import contacts
+2025-01-19 06:54:10.590 | INFO     | __main__:check_core:160 - 号码 919073508087 已注册 Telegram
+2025-01-19 06:54:10.590 | INFO     | __main__:check_core:164 - 号码 919163495380 未注册 Telegram
+2025-01-19 06:54:10.591 | INFO     | __main__:check_core:164 - 号码 918617542874 未注册 Telegram
+2025-01-19 06:54:10.591 | INFO     | __main__:check_core:164 - 号码 919903642312 未注册 Telegram
+2025-01-19 06:54:10.591 | INFO     | __main__:check_core:164 - 号码 917550061570 未注册 Telegram
+2025-01-19 06:54:10.591 | INFO     | __main__:check_core:164 - 号码 919330601239 未注册 Telegram
+2025-01-19 06:54:10.591 | INFO     | __main__:check_core:164 - 号码 919433573851 未注册 Telegram
+2025-01-19 06:54:10.591 | INFO     | __main__:check_core:164 - 号码 918017015152 未注册 Telegram
+2025-01-19 06:54:10.591 | INFO     | __main__:check_core:164 - 号码 918910692748 未注册 Telegram
+2025-01-19 06:54:10.591 | INFO     | __main__:check_core:164 - 号码 919051552442 未注册 Telegram
+2025-01-19 06:54:10.591 | INFO     | __main__:check_core:164 - 号码 917980864168 未注册 Telegram
+2025-01-19 06:54:10.591 | INFO     | __main__:check_core:164 - 号码 919433578043 未注册 Telegram
+2025-01-19 06:54:10.591 | INFO     | __main__:check_core:164 - 号码 919433421012 未注册 Telegram
+2025-01-19 06:54:10.591 | INFO     | __main__:check_core:164 - 号码 919123248937 未注册 Telegram
+2025-01-19 06:54:10.592 | INFO     | __main__:check_core:164 - 号码 919123059465 未注册 Telegram
+2025-01-19 06:54:10.592 | INFO     | __main__:check_core:164 - 号码 917003105391 未注册 Telegram
+2025-01-19 06:54:10.592 | INFO     | __main__:check_core:164 - 号码 919903911857 未注册 Telegram
+2025-01-19 06:54:10.592 | INFO     | __main__:check_core:164 - 号码 919831012333 未注册 Telegram
+2025-01-19 06:54:10.592 | INFO     | __main__:check_core:164 - 号码 919836465275 未注册 Telegram
+2025-01-19 06:54:10.592 | INFO     | __main__:check_core:164 - 号码 919836058533 未注册 Telegram
+2025-01-19 06:54:10.592 | INFO     | __main__:check_core:164 - 号码 919007473033 未注册 Telegram
+2025-01-19 06:54:10.592 | INFO     | __main__:check_core:164 - 号码 919830148412 未注册 Telegram
+2025-01-19 06:54:10.592 | INFO     | __main__:check_core:164 - 号码 917550051694 未注册 Telegram
+2025-01-19 06:54:10.592 | INFO     | __main__:check_core:164 - 号码 918617085737 未注册 Telegram
+2025-01-19 06:54:10.592 | INFO     | __main__:check_core:164 - 号码 918420038470 未注册 Telegram
+2025-01-19 06:54:10.592 | INFO     | __main__:check_core:164 - 号码 919831222095 未注册 Telegram
+2025-01-19 06:54:10.595 | INFO     | __main__:check_core:164 - 号码 917980394830 未注册 Telegram
+2025-01-19 06:54:10.595 | INFO     | __main__:check_core:164 - 号码 917980762691 未注册 Telegram
+2025-01-19 06:54:10.595 | INFO     | __main__:check_core:164 - 号码 917890780196 未注册 Telegram
+2025-01-19 06:54:10.596 | INFO     | __main__:check_core:164 - 号码 919433137980 未注册 Telegram
+2025-01-19 06:54:10.596 | INFO     | __main__:check_core:164 - 号码 919051031831 未注册 Telegram
+2025-01-19 06:54:10.596 | INFO     | __main__:check_core:164 - 号码 917003186230 未注册 Telegram
+2025-01-19 06:54:10.596 | INFO     | __main__:check_core:164 - 号码 918910864971 未注册 Telegram
+2025-01-19 06:54:10.597 | INFO     | __main__:check_core:164 - 号码 917003604258 未注册 Telegram
+2025-01-19 06:54:10.597 | INFO     | __main__:check_core:164 - 号码 919062796965 未注册 Telegram
+2025-01-19 06:54:10.597 | INFO     | __main__:check_core:164 - 号码 919748827660 未注册 Telegram
+2025-01-19 06:54:10.597 | INFO     | __main__:check_core:164 - 号码 917980082944 未注册 Telegram
+2025-01-19 06:54:10.598 | INFO     | __main__:check_core:164 - 号码 919836148666 未注册 Telegram
+2025-01-19 06:54:10.598 | INFO     | __main__:check_core:164 - 号码 919123982313 未注册 Telegram
+2025-01-19 06:54:10.599 | INFO     | __main__:check_core:164 - 号码 918582915428 未注册 Telegram
+2025-01-19 06:54:10.600 | INFO     | __main__:check_core:164 - 号码 919836079444 未注册 Telegram
+2025-01-19 06:54:10.600 | INFO     | __main__:check_core:164 - 号码 917044095432 未注册 Telegram
+2025-01-19 06:54:10.600 | INFO     | __main__:check_core:164 - 号码 919830693002 未注册 Telegram
+2025-01-19 06:54:10.600 | INFO     | __main__:check_core:164 - 号码 919875521241 未注册 Telegram
+2025-01-19 06:54:10.600 | INFO     | __main__:check_core:164 - 号码 919831199632 未注册 Telegram
+2025-01-19 06:54:10.600 | INFO     | __main__:check_core:164 - 号码 919903933111 未注册 Telegram
+2025-01-19 06:54:10.600 | INFO     | __main__:check_core:164 - 号码 918910720226 未注册 Telegram
+2025-01-19 06:54:10.600 | INFO     | __main__:check_core:164 - 号码 918910644687 未注册 Telegram
+2025-01-19 06:54:10.600 | INFO     | __main__:check_core:164 - 号码 919330817327 未注册 Telegram
+2025-01-19 06:54:10.600 | INFO     | __main__:check_core:164 - 号码 918583888134 未注册 Telegram
+2025-01-19 06:54:10.601 | INFO     | __main__:check_core:164 - 号码 919163965372 未注册 Telegram
+2025-01-19 06:54:10.602 | INFO     | __main__:check_core:164 - 号码 916291641653 未注册 Telegram
+2025-01-19 06:54:10.602 | INFO     | __main__:check_core:164 - 号码 919123305722 未注册 Telegram
+2025-01-19 06:54:10.602 | INFO     | __main__:check_core:164 - 号码 917550187682 未注册 Telegram
+2025-01-19 06:54:10.603 | INFO     | __main__:check_core:164 - 号码 919830055909 未注册 Telegram
+2025-01-19 06:54:10.603 | INFO     | __main__:check_core:164 - 号码 918334008956 未注册 Telegram
+2025-01-19 06:54:10.603 | INFO     | __main__:check_core:164 - 号码 919163588947 未注册 Telegram
+2025-01-19 06:54:10.606 | INFO     | __main__:check_core:164 - 号码 919836679513 未注册 Telegram
+2025-01-19 06:54:10.606 | INFO     | __main__:check_core:164 - 号码 918336892432 未注册 Telegram
+2025-01-19 06:54:10.606 | INFO     | __main__:check_core:164 - 号码 919163054045 未注册 Telegram
+2025-01-19 06:54:10.606 | INFO     | __main__:check_core:164 - 号码 919874982535 未注册 Telegram
+2025-01-19 06:54:10.607 | INFO     | __main__:check_core:164 - 号码 919836746280 未注册 Telegram
+2025-01-19 06:54:10.607 | INFO     | __main__:check_core:164 - 号码 919831133599 未注册 Telegram
+2025-01-19 06:54:10.607 | INFO     | __main__:check_core:164 - 号码 919830616390 未注册 Telegram
+2025-01-19 06:54:10.607 | INFO     | __main__:check_core:164 - 号码 919123155178 未注册 Telegram
+2025-01-19 06:54:10.607 | INFO     | __main__:check_core:164 - 号码 918240678156 未注册 Telegram
+2025-01-19 06:54:10.607 | INFO     | __main__:check_core:164 - 号码 919330849126 未注册 Telegram
+2025-01-19 06:54:10.608 | INFO     | __main__:check_core:164 - 号码 918017715057 未注册 Telegram
+2025-01-19 06:54:10.608 | INFO     | __main__:check_core:164 - 号码 919831033590 未注册 Telegram
+2025-01-19 06:54:10.608 | INFO     | __main__:check_core:164 - 号码 919830570472 未注册 Telegram
+2025-01-19 06:54:10.608 | INFO     | __main__:check_core:164 - 号码 919903333146 未注册 Telegram
+2025-01-19 06:54:10.608 | INFO     | __main__:check_core:164 - 号码 919073399765 未注册 Telegram
+2025-01-19 06:54:10.608 | INFO     | __main__:check_core:164 - 号码 919038841718 未注册 Telegram
+2025-01-19 06:54:10.608 | INFO     | __main__:check_core:164 - 号码 919477751235 未注册 Telegram
+2025-01-19 06:54:10.608 | INFO     | __main__:check_core:164 - 号码 919163808486 未注册 Telegram
+2025-01-19 06:54:10.608 | INFO     | __main__:check_core:164 - 号码 919830429172 未注册 Telegram
+2025-01-19 06:54:10.608 | INFO     | __main__:check_core:164 - 号码 916290718056 未注册 Telegram
+2025-01-19 06:54:10.608 | INFO     | __main__:check_core:164 - 号码 919433801448 未注册 Telegram
+2025-01-19 06:54:10.608 | INFO     | __main__:check_core:164 - 号码 919163902108 未注册 Telegram
+2025-01-19 06:54:10.609 | INFO     | __main__:check_core:164 - 号码 918584097225 未注册 Telegram
+2025-01-19 06:54:10.609 | INFO     | __main__:check_core:164 - 号码 919062906683 未注册 Telegram
+2025-01-19 06:54:10.609 | INFO     | __main__:check_core:164 - 号码 919748178217 未注册 Telegram
+2025-01-19 06:54:10.612 | INFO     | __main__:check_core:164 - 号码 917044344610 未注册 Telegram
+2025-01-19 06:54:10.612 | INFO     | __main__:check_core:164 - 号码 919748300543 未注册 Telegram
+2025-01-19 06:54:10.612 | INFO     | __main__:check_core:164 - 号码 917003763998 未注册 Telegram
+2025-01-19 06:54:10.612 | INFO     | __main__:check_core:164 - 号码 919831126665 未注册 Telegram
+2025-01-19 06:54:10.613 | INFO     | __main__:check_core:164 - 号码 919836420013 未注册 Telegram
+2025-01-19 06:54:10.613 | INFO     | __main__:check_core:164 - 号码 919163892107 未注册 Telegram
+2025-01-19 06:54:10.613 | INFO     | __main__:check_core:164 - 号码 916290114204 未注册 Telegram
+2025-01-19 06:54:10.613 | INFO     | __main__:check_core:164 - 号码 919748808861 未注册 Telegram
+2025-01-19 06:54:10.614 | INFO     | __main__:check_core:164 - 号码 919748787412 未注册 Telegram
+2025-01-19 06:54:10.614 | INFO     | __main__:check_core:164 - 号码 919831476064 未注册 Telegram
+2025-01-19 06:54:10.614 | INFO     | __main__:check_core:164 - 号码 916291320647 未注册 Telegram
+2025-01-19 06:54:10.614 | INFO     | __main__:check_core:164 - 号码 919831449194 未注册 Telegram
+2025-01-19 06:54:10.615 | INFO     | __main__:check_core:164 - 号码 918777435525 未注册 Telegram
+2025-01-19 06:54:10.615 | INFO     | __main__:check_core:164 - 号码 919830078849 未注册 Telegram
+2025-01-19 06:54:10.615 | INFO     | __main__:check_core:164 - 号码 919830572232 未注册 Telegram
+2025-01-19 06:54:10.615 | INFO     | __main__:check_core:164 - 号码 919433308402 未注册 Telegram
+2025-01-19 06:54:10.615 | INFO     | __main__:check_core:164 - 号码 919051308269 未注册 Telegram
+2025-01-19 06:54:10.615 | INFO     | __main__:check_core:164 - 号码 917003676500 未注册 Telegram
+2025-01-19 06:54:10.861 | INFO     | __main__:check_core:169 - waiting for 10.87652034861555 seconds before delete contacts
+2025-01-19 06:54:21.738 | INFO     | __main__:check_phone_numbers:217 - Checking 100->200 / 6919
+2025-01-19 06:54:21.739 | INFO     | __main__:check_core:145 - waiting for 46.43740092443902 seconds before import contacts
+2025-01-19 06:55:08.615 | INFO     | __main__:check_core:149 - ImportedContacts(imported=[], popular_invites=[], retry_contacts=[71401854, 71952798, 13907815, 43073414, 62938893, 81292121, 16217992, 16210593, 68414387, 49728241, 73540939, 97633752, 34164326, 82246982, 43821003, 41505096, 12389327, 75529326, 97934103, 88173093, 29762689, 52879841, 44138287, 45977436, 61944579, 15900838, 90906632, 57104504, 10214047, 99576099, 36502027, 14539450, 49364295, 69304598, 27672449, 86696159, 66938085, 91949858, 36289581, 12386885, 29555361, 76138494, 40991854, 70615319, 42517530, 51931886, 31122728, 92709437, 27059165, 76099496, 48953997, 80024380, 85787707, 26343722, 47695431, 76826170, 28459995, 32632288, 85972968, 97890519, 20825928, 41667478, 44391596, 57562367, 37769655, 28859944, 76668909, 57303990, 85111479, 31869313, 54572606, 70999023, 30908174, 70506702, 87158685, 58551367, 22383856, 74402718, 43613520, 37917767, 31502056, 39471957, 70067933, 29385333, 17095401, 51136476, 35233223, 75172106, 59468585, 93413211, 73357852, 33148674, 71308404, 48220250, 69565406, 69981756, 13390129, 62532819, 48730261, 68912389], users=[])
+2025-01-19 06:55:08.615 | INFO     | __main__:check_core:152 - waiting for 17.419481852603234 seconds before import contacts
+2025-01-19 07:09:53.102 | INFO     | __main__:check_phone_numbers:217 - Checking 200->300 / 6919
+2025-01-19 07:09:53.103 | INFO     | __main__:check_core:145 - waiting for 40.44032859712037 seconds before import contacts
+2025-01-19 07:10:33.969 | INFO     | __main__:check_core:149 - ImportedContacts(imported=[], popular_invites=[], retry_contacts=[90493657, 47380794, 49377759, 59904942, 40133330, 69978211, 68419112, 49638639, 52313385, 41673632, 28805273, 23652216, 15666842, 87567839, 84135290, 22172548, 44350588, 43125632, 78589779, 18995697, 42001246, 39110856, 72526654, 30764399, 72562649, 96000562, 49547453, 79705716, 92975310, 29368917, 99554364, 48444981, 75406654, 37424878, 63359718, 55109068, 51689851, 54633399, 81265090, 90944263, 43087421, 55105712, 43397430, 47496722, 41742903, 46928456, 29456056, 52796673, 43191429, 72965401, 82340098, 33829902, 22454658, 37364012, 82240645, 98496910, 54166187, 93948370, 57977010, 30825390, 92963401, 82287107, 69990476, 33076719, 99545515, 66238418, 21964988, 51031841, 77514716, 37298373, 87334852, 50664979, 47324146, 12942186, 10263025, 19789903, 84232737, 30183731, 39922608, 22855850, 67988492, 90715510, 29758290, 87604109, 23208910, 22181547, 38948840, 28476338, 18864288, 23748012, 68776135, 71014934, 10190142, 92127355, 53181679, 97833204, 53099585, 82170603, 73807533, 55632133], users=[])
+2025-01-19 07:10:33.970 | INFO     | __main__:check_core:152 - waiting for 25.093659134765907 seconds before import contacts
+2025-01-19 07:11:28.425 | INFO     | __main__:check_phone_numbers:217 - Checking 300->400 / 6919
+2025-01-19 07:11:28.428 | INFO     | __main__:check_core:145 - waiting for 57.37684567265903 seconds before import contacts
+2025-01-19 07:12:14.656 | ERROR    | __main__:check_phone_numbers:230 - 检测失败: 
+2025-01-19 07:12:14.656 | INFO     | __main__:check_phone_numbers:217 - Checking 400->500 / 6919
+2025-01-19 07:12:14.657 | INFO     | __main__:check_core:145 - waiting for 54.71581792197652 seconds before import contacts

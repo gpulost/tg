@@ -1,1 +1,24 @@
-{"phone":"573504137666","session_file":"573504137666","app_id":21724,"app_hash":"3e0cb5efcd52300aec5994fdfc5bdc16","app_version":"0.26.9.1730-arm64-v8a","sdk":"14 (34)","device":"Xiaomi 22081212R","system_lang_code":"es-CO","lang_code":"es","lang_pack":"android_x","tz_offset":-18000,"package_id":"org.thunderdog.challegram","installer":"com.android.vending","device_token":"cRFDZu8NE2HitaRbr09zO0:APA91bEp5qrhG4m5MNI5dX9DxlNoUPWHthqss-b_X9XmYYG6hIOvJuMRvA1wNhjQAvSmVhHHlkDbsjTBDetjpBc1-mrmsIzbcUn24rGCneuOi4Q4oK4bOSs","device_secret":"pyOSAnHgUL8vnqIOfexcy887qxuK+WnY20i3J5YGCXXkVMMzohIVgfBgzz+usR6N/GzbS0+6KpkJeehYW8c3phYZhfRk00NGsiKRAXDfT1K+Lp0NfOtbX8o6qRmI9/tn10e2JimVBXTjU1bCMqERgO/yX84+rR2M+/5r2kq5KS2YCHfmVsU1OaUVhPNjZtJCsSGQ/29y3k69LZwMe37qWsk5qKsYh/Zm1UW0uCSTA3Pi5VLBMaAQE3/uXs09rBwfi/pq2Um4KCuXB3blVVnENKMTgobxYdFBRLAgj/5ucd1NvCybCw566VnIODunF4b1ZdTXRLMjkgJx4ORQvy+fDw==","twoFA":"ht7717","proxy":[],"user_id":"7418389836","first_name":"26339998","last_name":"","username":"","last_check_time":"1736147039"}
+{
+    "phone": "573504137666",
+    "session_file": "573504137666",
+    "app_id": 21724,
+    "app_hash": "3e0cb5efcd52300aec5994fdfc5bdc16",
+    "app_version": "0.26.9.1730-arm64-v8a",
+    "sdk": "14 (34)",
+    "device": "Xiaomi 22081212R",
+    "system_lang_code": "es-CO",
+    "lang_code": "es",
+    "lang_pack": "android_x",
+    "tz_offset": -18000,
+    "package_id": "org.thunderdog.challegram",
+    "installer": "com.android.vending",
+    "device_token": "cRFDZu8NE2HitaRbr09zO0:APA91bEp5qrhG4m5MNI5dX9DxlNoUPWHthqss-b_X9XmYYG6hIOvJuMRvA1wNhjQAvSmVhHHlkDbsjTBDetjpBc1-mrmsIzbcUn24rGCneuOi4Q4oK4bOSs",
+    "device_secret": "pyOSAnHgUL8vnqIOfexcy887qxuK+WnY20i3J5YGCXXkVMMzohIVgfBgzz+usR6N/GzbS0+6KpkJeehYW8c3phYZhfRk00NGsiKRAXDfT1K+Lp0NfOtbX8o6qRmI9/tn10e2JimVBXTjU1bCMqERgO/yX84+rR2M+/5r2kq5KS2YCHfmVsU1OaUVhPNjZtJCsSGQ/29y3k69LZwMe37qWsk5qKsYh/Zm1UW0uCSTA3Pi5VLBMaAQE3/uXs09rBwfi/pq2Um4KCuXB3blVVnENKMTgobxYdFBRLAgj/5ucd1NvCybCw566VnIODunF4b1ZdTXRLMjkgJx4ORQvy+fDw==",
+    "twoFA": "ht7717",
+    "proxy": [],
+    "user_id": "7418389836",
+    "first_name": "26339998",
+    "last_name": "",
+    "username": "",
+    "last_check_time": "1736147039"
+}
