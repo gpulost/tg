@@ -105,32 +105,6 @@ def get_session_string(
     finally:
         client.disconnect()
 
-
-def mock_send_message(client: TelegramClient):
-    try:
-        phone = "+15413006705"
-        # 先尝试直接发送消息
-        try:
-            logger.info(f"Sending message to {phone}")
-            client.send_message(phone, "how are you")
-            return
-        except ValueError:
-            # 如果失败，说明需要先建立联系人
-            contact = InputPhoneContact(
-                client_id=0,
-                phone=phone,
-                first_name="Test",
-                last_name=""
-            )
-            # 添加为联系人
-            result = client(ImportContactsRequest([contact]))
-            if result.users:
-                # 使用获取到的用户实体发送消息
-                client.send_message(result.users[0], "test")
-                client(DeleteContactsRequest(result.users))
-    except Exception as e:
-        logger.error(f"发送消息失败: {str(e)}")
-
 import string
 
 def generate_random_person_first_name():
@@ -141,7 +115,7 @@ def generate_random_person_last_name():
 
 
 def check_core(client: TelegramClient, contacts):
-    silent = random.uniform(600, 700)
+    silent = random.uniform(100, 200)
     logger.info(f"waiting for {silent} seconds before import contacts")
     time.sleep(silent)
     logger.info(f"importing contacts: {contacts}")
@@ -158,6 +132,10 @@ def check_core(client: TelegramClient, contacts):
             if hasattr(user, 'phone'):
                 results[user.phone] = True
                 logger.info(f"号码 {user.phone} 已注册 Telegram")
+            if not os.path.exists(f"avatars"):
+                os.makedirs(f"avatars")
+            time.sleep(random.uniform(3, 5))
+            import pdb; pdb.set_trace()
             client.loop.run_until_complete(
                 client.download_profile_photo(user, file=f"avatars/{user.phone}.jpg", download_big=True)
             ) # 下载头像
@@ -235,7 +213,7 @@ def check_phone_numbers(
 # 主函数
 if __name__ == "__main__":
     # 从环境变量中读取 API 配置
-    with open("0119/573216792981.json", 'r') as f:
+    with open("573228468758.json", 'r') as f:
         data = json.load(f)
     country_code = data['phone'][:2]
     phone_number = data['phone']
@@ -246,7 +224,7 @@ if __name__ == "__main__":
     lang_code = data['lang_code']
     system_lang_code = data['system_lang_code']
     app_version = data['app_version']
-    session_file = f"0119/{data['session_file']}"
+    session_file = f"{data['session_file']}"
     session = get_session_string(
         app_id, app_hash, session_file, 
         device_model, system_version, lang_code, system_lang_code, app_version,
@@ -260,7 +238,7 @@ if __name__ == "__main__":
 
     with open("ctusmr6p2jvlleut3oc0.txt", "r") as f:
        phone_numbers = [line.strip() for line in f.readlines()]
-    # phone_numbers = ["919163495380"]
+    random.shuffle(phone_numbers)
     check_phone_numbers(
         app_id, app_hash, session, phone_numbers,
         device_model, system_version, lang_code, system_lang_code, app_version,

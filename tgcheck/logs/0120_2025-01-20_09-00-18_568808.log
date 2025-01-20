@@ -1,0 +1,5 @@
+2025-01-20 09:00:21.338 | INFO     | __main__:check_phone_numbers:194 - Checking 0->500 / 1
+2025-01-20 09:00:21.340 | INFO     | __main__:check_core:119 - waiting for 163.62240238668764 seconds before import contacts
+2025-01-20 09:03:04.963 | INFO     | __main__:check_core:121 - importing contacts: [<telethon.tl.types.InputPhoneContact object at 0x791243519760>]
+2025-01-20 09:03:05.200 | INFO     | __main__:check_core:124 - ImportedContacts(imported=[], popular_invites=[], retry_contacts=[93717082], users=[])
+2025-01-20 09:03:05.201 | ERROR    | __main__:check_core:128 - 本次检测可能有无效的结果，retry contacts: [93717082]
