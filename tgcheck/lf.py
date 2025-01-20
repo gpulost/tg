@@ -9,6 +9,10 @@ from telethon.tl.types import InputPhoneContact
 from dotenv import load_dotenv, find_dotenv
 import random
 import string
+import logging
+from loguru import logger
+
+logging.basicConfig(level=logging.DEBUG)
 
 # 加载环境变量
 _ = load_dotenv(find_dotenv())
@@ -32,17 +36,17 @@ def get_session_string(app_id, app_hash, session_file):
         # 连接并确认会话可用
         client.connect()
         if not client.is_user_authorized():
-            print("Session 失效，需要重新登录。")
+            logger.info("Session 失效，需要重新登录。")
             return None
 
         # 将当前 session 转换为 StringSession
         session_string = StringSession.save(client.session)
-        print("成功获取 StringSession：")
-        print(session_string)
+        logger.info("成功获取 StringSession：")
+        logger.info(session_string)
         return session_string
 
     except Exception as e:
-        print(f"获取session失败: {str(e)}")
+        logger.info(f"获取session失败: {str(e)}")
         return None
 
     finally:
@@ -58,26 +62,26 @@ def check_phone_numbers(app_id, app_hash, session_string, phone_numbers):
     try:
         client.connect()
         if not client.is_user_authorized():
-            print("用户未授权，请检查 StringSession 有效性。")
+            logger.info("用户未授权，请检查 StringSession 有效性。")
             return results
 
         # 修改为每次只处理5个号码
-        batch_size = 50
+        batch_size = 300
         for i in range(0, len(phone_numbers), batch_size):
             batch = phone_numbers[i:i + batch_size]
             contacts = []
             
-            print(f"\n正在处理第 {i+1}-{min(i+batch_size, len(phone_numbers))} 个号码...")
+            logger.info(f"\n正在处理第 {i+1}-{min(i+batch_size, len(phone_numbers))} 个号码...")
             
             # 每个批次前增加较长的随机延迟
-            batch_delay = random.uniform(8.0, 15.0)
-            print(f"batch_delay: {batch_delay}")
+            batch_delay = random.uniform(10.0, 20.0)
+            logger.info(f"batch_delay: {batch_delay}")
             time.sleep(batch_delay)
             
             for phone in batch:
                 # 每个号码处理前增加短暂延迟
                 delay = random.uniform(1.0, 2.5)
-                print(f"short delay: {delay}")
+                logger.info(f"short delay: {delay}")
                 time.sleep(delay)
                 
                 random_client_id = random.randint(10000000, 99999999)
@@ -94,7 +98,9 @@ def check_phone_numbers(app_id, app_hash, session_string, phone_numbers):
 
             try:
                 result = client(ImportContactsRequest(contacts))
-                
+                with open('rawresult.txt', 'a', encoding='utf-8') as f:
+                    f.write(str(result) + '\n')
+
                 with open('result.txt', 'a', encoding='utf-8') as f:
                     timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
                     
@@ -102,26 +108,26 @@ def check_phone_numbers(app_id, app_hash, session_string, phone_numbers):
                         if hasattr(user, 'phone'):
                             results[user.phone] = True
                             msg = f"[{timestamp}] 号码 {user.phone} 已注册 Telegram"
-                            print(msg)
+                            logger.info(msg)
                             f.write(msg + '\n')
                     
                     for contact in contacts:
                         if contact.phone not in results:
                             results[contact.phone] = False
                             msg = f"[{timestamp}] 号码 {contact.phone} 未注册 Telegram"
-                            print(msg)
+                            logger.info(msg)
                             f.write(msg + '\n')
 
                 # 删除添加的联系人前增加延迟
-                time.sleep(random.uniform(2.0, 4.0))
+                time.sleep(random.uniform(10.0, 20.0))
                 if result.users:
                     client(DeleteContactsRequest(result.users))
                     # 删除后增加额外延迟
-                    time.sleep(random.uniform(3.0, 5.0))
+                    time.sleep(random.uniform(100.0, 200.0))
 
             except Exception as e:
                 error_msg = f"处理批次 {i+1}-{min(i+batch_size, len(phone_numbers))} 时出错: {str(e)}"
-                print(error_msg)
+                logger.info(error_msg)
                 with open('error_log.txt', 'a', encoding='utf-8') as f:
                     f.write(f"[{timestamp}] {error_msg}\n")
                 
@@ -130,7 +136,7 @@ def check_phone_numbers(app_id, app_hash, session_string, phone_numbers):
                 continue
 
     except Exception as e:
-        print(f"检测过程发生错误: {str(e)}")
+        logger.info(f"检测过程发生错误: {str(e)}")
         with open('error_log.txt', 'a', encoding='utf-8') as f:
             f.write(f"[{timestamp}] 检测过程发生错误: {str(e)}\n")
 
@@ -155,10 +161,10 @@ if __name__ == "__main__":
         app_id = str(data['app_id'])
         app_hash = data['app_hash']
         session = get_session_string(app_id, app_hash, session_file)
-        print(phone_number, app_id, app_hash, session)
+        logger.info(f"{phone_number} {app_id} {app_hash} {session}")
 
         if not app_id or not app_hash or not session:
-            print("请设置 SESSION、TELEGRAM_API_ID 和 TELEGRAM_API_HASH 环境变量")
+            logger.info("请设置 SESSION、TELEGRAM_API_ID 和 TELEGRAM_API_HASH 环境变量")
             sys.exit(1)
 
         # 读取待检测的号码列表
@@ -172,6 +178,8 @@ if __name__ == "__main__":
         # 批量检测号码
         with open("ctusmr6p2jvlleut3oc0.txt", "r") as f:
             phone_numbers = [line.strip() for line in f.readlines()]
+        random.shuffle(phone_numbers)
+        #phone_numbers = [_.strip().split(",")[0].split("@")[1] for _ in open("100794__tg.csv").readlines()[1:]]
         results = check_phone_numbers(app_id, app_hash, session, phone_numbers)
 
         ## 输出结果

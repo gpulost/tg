@@ -21,7 +21,7 @@ pdf_reader = None # PDFReader()
 
 # 配置logger同时显示到console和文件
 logger.remove()
-logger.add("logs/0118_{time}.log", rotation="1 day", retention="7 days", level="DEBUG")
+logger.add("logs/0120_{time}.log", rotation="1 day", retention="7 days", level="DEBUG")
 logger.add(sys.stdout, level="DEBUG")
 
 # 加载环境变量
@@ -141,7 +141,7 @@ def generate_random_person_last_name():
 
 
 def check_core(client: TelegramClient, contacts):
-    silent = random.uniform(10, 30)
+    silent = random.uniform(600, 700)
     logger.info(f"waiting for {silent} seconds before import contacts")
     time.sleep(silent)
     logger.info(f"importing contacts: {contacts}")
@@ -149,28 +149,27 @@ def check_core(client: TelegramClient, contacts):
     result = client(ImportContactsRequest(contacts))
     logger.info(result)
 
-    silent = random.uniform(10, 30)
-    logger.info(f"waiting for {silent} seconds before import contacts")
-    time.sleep(silent)
+    results = {}
+    if result.retry_contacts:
+        logger.error(f"本次检测可能有无效的结果，retry contacts: {result.retry_contacts}")
 
     if result.users:
-        results = {}
         for user in result.users:
             if hasattr(user, 'phone'):
                 results[user.phone] = True
                 logger.info(f"号码 {user.phone} 已注册 Telegram")
-        
+            client.loop.run_until_complete(
+                client.download_profile_photo(user, file=f"avatars/{user.phone}.jpg", download_big=True)
+            ) # 下载头像
         for contact in contacts:
             if contact.phone not in results:
                 logger.info(f"号码 {contact.phone} 未注册 Telegram")
         # 删除联系人（清理临时联系人）
         if result.users:
-            client(DeleteContactsRequest(result.users))
-            silent = random.uniform(10, 30)
+            silent = random.uniform(60, 120)
             logger.info(f"waiting for {silent} seconds before delete contacts")
             time.sleep(silent)
-    else:
-        logger.error(f"need retry contacts: {result}")
+            client(DeleteContactsRequest(result.users))
     
 
 def check_phone_numbers(
@@ -212,7 +211,7 @@ def check_phone_numbers(
         # mock_send_message(client)
         
         print(client.get_me().stringify())
-        batch_size = 50
+        batch_size = 500
         for batch_index in range(0, len(phone_numbers), batch_size):
             logger.info(f"Checking {batch_index}->{batch_index + batch_size} / {len(phone_numbers)}")
             batch = phone_numbers[batch_index:batch_index + batch_size]
